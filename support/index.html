@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Support and troubleshooting for Peeky: Pocket Sidekick.">
+  <meta name="description" content="Support and frequently asked questions for Peeky: Pocket Sidekick.">
   <title>Support - Peeky</title>
   <link rel="icon" href="../assets/peeky-icon.png">
   <link rel="stylesheet" href="../assets/site.css">
@@ -27,7 +27,7 @@
       <div class="hero-inner">
         <p class="eyebrow">Peeky: Pocket Sidekick</p>
         <h1>How can we help?</h1>
-        <p>Answers for voice capture, permissions, reminders, Dynamic Island, purchases, and local data.</p>
+        <p>Answers for notes and attachments, iCloud sync, plans and payments, widgets, Dynamic Island, purchases, and your data.</p>
         <div class="actions">
           <a class="button" href="mailto:burak.akbay@hotmail.com?subject=Peeky%20Support">Email support</a>
           <a class="button secondary" href="../privacy/">Privacy policy</a>
@@ -37,26 +37,55 @@
 
     <div class="content">
       <section>
-        <h2>Frequently asked questions</h2>
+        <h2>Notes</h2>
 
         <details>
           <summary>How do I record and transcribe a voice note?</summary>
-          <p>Open the Voice tab, or use the Note action from an active Dynamic Island Live Activity. Allow microphone and Speech Recognition access, start recording, speak, then stop and review the transcript before saving it.</p>
+          <p>Open the Capture tab, or use the Dictate action on an active Live Activity. Allow microphone and Speech Recognition access, start recording, speak, then review the transcript before saving it. Peeky uses on-device recognition when your device and language support it.</p>
         </details>
 
         <details>
           <summary>Is there a voice recording time limit?</summary>
-          <p>Peeky does not add a fixed recording timer. Apple's Speech framework may end long recognition sessions based on device, language, network, or system conditions, so short focused notes provide the most reliable results.</p>
+          <p>Peeky does not add a fixed recording timer. Apple's Speech framework may end long recognition sessions based on device, language, network, or system conditions, so short focused notes give the most reliable results.</p>
         </details>
 
         <details>
-          <summary>Why is Dynamic Island not visible?</summary>
-          <p>Dynamic Island requires a supported iPhone and Live Activities enabled in iOS Settings. Start Peeky's duty from the app. Stopping duty ends all active Peeky Live Activities immediately.</p>
+          <summary>How do I add photos, files, or a drawing to a note?</summary>
+          <p>Open a note and use Add image or Add file at the bottom of the canvas. Drag anything you add to place it, and pinch a photo to resize it. Tap Draw to open the Apple pen palette and sketch over the page; tap Done when you finish. Tap a saved attachment to preview it full screen, or press and hold it to remove it.</p>
         </details>
 
         <details>
-          <summary>Can Peeky read my email, messages, or other apps?</summary>
-          <p>No. Peeky does not read private content from Mail, Messages, notifications, or other apps. Its outside-app presence is limited to Apple's Live Activity and Dynamic Island capabilities.</p>
+          <summary>How do checklists work?</summary>
+          <p>In the note editor, tap the checklist button to start a checkbox line. Checkbox lines can be ticked straight from the note shelf without opening the note, and the shelf shows how many are done.</p>
+        </details>
+
+        <details>
+          <summary>How do I lock a private note?</summary>
+          <p>Open the note, tap the ••• button in the editor toolbar, and choose Seal note. Sealed notes hide their content on the shelf and open only after Face ID, Touch ID, or your passcode. They are also excluded from iOS search. Use Remove seal in the same menu to unlock it permanently.</p>
+        </details>
+
+        <details>
+          <summary>How do I send something from another app to Peeky?</summary>
+          <p>Use the iOS share sheet in Safari, Photos, Messages, or any other app and choose Peeky. Text, links, and images are hung on your note shelf, and images land on the note's canvas. Open Peeky once afterwards to see them arrive.</p>
+        </details>
+
+        <details>
+          <summary>Can I use Siri or the Action button?</summary>
+          <p>Yes. Say “Add a note with Peeky” to capture a note without opening the app, or assign the same shortcut to the Action button or Control Center. Your notes also appear in iOS search, and tapping a result opens that note in Peeky.</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Plans and payments</h2>
+
+        <details>
+          <summary>Can Peeky show my calendar and reminders?</summary>
+          <p>Yes. Grant calendar and reminders access, and the plan board shows the events and reminders due on the day you are viewing, read-only, under “From your system”. Peeky can also create events and reminders for you from a captured note.</p>
+        </details>
+
+        <details>
+          <summary>How do repeating payments work?</summary>
+          <p>Give a payment a cycle — weekly through yearly — and when you mark it paid, Peeky records the payment in its ledger and moves the due date to the next cycle. If you marked it by mistake, use Undo in the confirmation strip or “Undo payment” in the payment's ••• menu on the same day.</p>
         </details>
 
         <details>
@@ -65,8 +94,51 @@
         </details>
 
         <details>
+          <summary>When do payment reminders arrive?</summary>
+          <p>Each payment can remind you a week, three days, and one day before, and on the due day itself, at 9:00 AM. Choose the ones you want in the payment editor. Plans with a time also ring at their own hour, with Complete and Move to tomorrow buttons on the notification.</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Sync, widgets, and Dynamic Island</h2>
+
+        <details>
+          <summary>Does Peeky sync between my devices?</summary>
+          <p>Yes, through your own iCloud account. Sign in to iCloud on both devices, keep iCloud Drive on for Peeky in iOS Settings, and your notes, attachments, drawings, plans, and payments follow you. The developer has no access to any of it. Settings › Data shows whether sync is ready.</p>
+        </details>
+
+        <details>
+          <summary>My notes synced but the photos are missing.</summary>
+          <p>Attachments travel separately and can take a little longer, especially on cellular or low power mode. Open Peeky on the device that has the photos, leave it in the foreground for a minute, then open the other device. If they still do not appear, check that both devices are signed in to the same Apple Account with iCloud Drive enabled.</p>
+        </details>
+
+        <details>
+          <summary>How do the Home Screen and Lock Screen widgets work?</summary>
+          <p>Add a Peeky widget from the Home Screen or Lock Screen gallery. It shows your next plan and your next payment, and the check buttons complete a task or mark a payment paid without opening the app. Peeky applies those taps the next time you open it.</p>
+        </details>
+
+        <details>
+          <summary>Why is Dynamic Island not visible?</summary>
+          <p>Dynamic Island requires a supported iPhone and Live Activities enabled in iOS Settings. Start a focus guard from the Home screen, or turn on “Day progress on the Island” in Settings › Island companion. Tapping the Island opens Peeky; recording starts only from the Dictate button.</p>
+        </details>
+
+        <details>
+          <summary>Can Peeky read my email, messages, or other apps?</summary>
+          <p>No. Peeky does not read private content from Mail, Messages, notifications, or other apps. It only receives what you explicitly share with it or ask it to read, such as the calendar events for the day you are viewing.</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Purchases</h2>
+
+        <details>
           <summary>How does the 7-day access period work?</summary>
-          <p>Your first App Store acquisition starts one 7-day period with all Peeky features available. It is not a subscription and does not charge you automatically. After it ends, a monthly, yearly, or Lifetime purchase is required and there is no permanent Free mode. If you do not want to continue, no cancellation action is needed. Apple’s signed acquisition date is used, so deleting and reinstalling Peeky does not restart the period.</p>
+          <p>Your first App Store acquisition starts one 7-day period with all Peeky features available. It is not a subscription and does not charge you automatically. After it ends, a monthly, yearly, or Lifetime purchase is required and there is no permanent Free mode. If you do not want to continue, no cancellation action is needed. Apple's signed acquisition date is used, so deleting and reinstalling Peeky does not restart the period.</p>
+        </details>
+
+        <details>
+          <summary>Is there a free trial on the subscriptions?</summary>
+          <p>Yes. The monthly and yearly plans each start with a 3-day free trial for new subscribers, on top of the 7-day access period you get after downloading. You are only charged when the trial ends, and you can cancel before then in your App Store subscription settings. Lifetime is a one-time purchase, so it has no trial. If you have used the trial before, the App Store will not offer it again and Peeky will not advertise it.</p>
         </details>
 
         <details>
@@ -78,10 +150,24 @@
           <summary>How do I cancel a subscription?</summary>
           <p>Open iOS Settings, select your Apple Account, choose Subscriptions, then select Peeky. Cancellation and billing are managed by Apple.</p>
         </details>
+      </section>
+
+      <section>
+        <h2>Your data</h2>
+
+        <details>
+          <summary>I deleted something by mistake.</summary>
+          <p>Tap Undo in the strip that appears right after you delete. If it is gone, open the paper basket — from the note shelf or the plan board — where deleted notes, plans, and payments wait for 30 days. Restore returns an item exactly as it was.</p>
+        </details>
+
+        <details>
+          <summary>How do I back up or move my data?</summary>
+          <p>Settings › Data has Export and Import. The export is a JSON file containing your notes, plans, and payments; photos and files attached to notes are not included in that file, so keep iCloud sync on if you want attachments to travel too.</p>
+        </details>
 
         <details>
           <summary>How do I delete my data?</summary>
-          <p>Delete notes, reminders, plans, future messages, and payment reminders inside Peeky. Optional local diagnostics can be deleted in Settings. Removing the app deletes its remaining local app data; Apple Calendar events and Reminders must be managed in their Apple apps.</p>
+          <p>Delete notes, plans, and payments inside Peeky and then empty the paper basket to remove them for good. Optional local diagnostics can be deleted in Settings. Removing the app deletes its local data on that device; if iCloud sync is on, the synced copy stays in your iCloud account until it is deleted from a device that is still signed in. Apple Calendar events and Reminders must be managed in their Apple apps.</p>
         </details>
 
         <details>

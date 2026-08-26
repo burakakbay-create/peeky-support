@@ -27,8 +27,8 @@
       <div class="hero-inner">
         <p class="eyebrow">Peeky: Pocket Sidekick</p>
         <h1>Privacy Policy</h1>
-        <p>Peeky is designed as a local-first app. Your notes, plans, transcripts, and payment reminders stay on your device.</p>
-        <p class="updated">Last updated: July 13, 2026</p>
+        <p>Peeky keeps your notes, plans, and payment reminders on your device. If you turn on iCloud, they also sync privately through your own Apple Account. The developer never receives them.</p>
+        <p class="updated">Last updated: August 26, 2026</p>
       </div>
     </section>
 
@@ -36,20 +36,45 @@
       <section>
         <h2>Summary</h2>
         <ul>
-          <li>Peeky does not require an account.</li>
+          <li>Peeky does not require an account and does not operate its own server.</li>
           <li>Peeky does not use advertising or cross-app tracking.</li>
-          <li>Peeky does not operate an analytics, transcription, or cloud storage server in this version.</li>
-          <li>Your content and optional diagnostics are stored locally on your device.</li>
+          <li>Your content stays on your device, and — when you are signed in to iCloud — in your own private iCloud storage. The developer cannot read it.</li>
+          <li>Optional analytics and diagnostics stay on your device and are never sent automatically.</li>
         </ul>
       </section>
 
       <section>
         <h2>Information processed by Peeky</h2>
+
         <h3>Notes, plans, reminders, and payment reminders</h3>
-        <p>Content you enter, including note text, reminder titles, calendar plans, future messages, payment labels, amounts, and due dates, is stored locally so the app can provide its features. Peeky does not send this content to the developer.</p>
+        <p>Content you enter, including note text, checklists, reminder titles, calendar plans, future messages, payment labels, amounts, due dates, and the record of payments you mark as paid, is stored so the app can provide its features. Peeky does not send this content to the developer.</p>
+
+        <h3>Photos, files, and drawings you add to a note</h3>
+        <p>You can place photos and files on a note's canvas and draw on it with Apple Pencil or your finger. Those images, documents, and ink strokes are stored inside Peeky's private app storage on your device and are treated exactly like your note text. Peeky uses the system photo picker, which hands over only the items you pick, so Peeky never requests access to your whole photo library.</p>
+
+        <h3>iCloud sync</h3>
+        <p>If your device is signed in to iCloud, Peeky mirrors your notes, attachments, drawings, plans, and payment reminders into the <em>private</em> database of your own iCloud account (container <code>iCloud.com.peeky.app</code>) so your devices stay in step. This storage belongs to you and is governed by Apple's iCloud terms and privacy policy. The developer has no access to it and receives no copy. If you are not signed in to iCloud, or you turn iCloud off for Peeky in iOS Settings, everything simply stays on the device.</p>
 
         <h3>Voice notes and transcription</h3>
-        <p>When you start a voice note, Peeky sends microphone audio to Apple's Speech framework for the transcription you request. Depending on your device, language, and Apple's service availability, processing may occur on the device or through Apple's services. Peeky does not create or retain a separate audio file and the developer does not receive your audio or transcript.</p>
+        <p>When you start a voice note, Peeky passes microphone audio to Apple's Speech framework for the transcription you request. Peeky asks for on-device recognition whenever your device and language support it; otherwise Apple may process it through Apple's services. Peeky does not create or retain a separate audio file, and the developer does not receive your audio or transcript.</p>
+
+        <h3>Calendar and Reminders</h3>
+        <p>With your permission, Peeky reads the events and incomplete reminders scheduled for the day you are viewing and shows them, read-only, alongside your own plans. Peeky also creates calendar events and Apple Reminders when you ask it to. This information is read on the device for display; Peeky does not copy it to the developer.</p>
+
+        <h3>Locked notes and Face ID</h3>
+        <p>You can seal a note so it can only be opened after Face ID, Touch ID, or your device passcode. Authentication is performed by iOS; Peeky is only told whether it succeeded and never sees your biometric data. Sealed notes are excluded from system search indexing.</p>
+
+        <h3>System search (Spotlight)</h3>
+        <p>So you can find a note from iOS search, Peeky adds note titles and a short excerpt to the on-device Spotlight index. Sealed notes and notes in the paper basket are excluded. This index is maintained by iOS on your device.</p>
+
+        <h3>Content shared into Peeky</h3>
+        <p>When you use the iOS share sheet to send text, a link, or an image to Peeky, that item is handed to Peeky by the system and becomes a note. Peeky receives only what you explicitly share.</p>
+
+        <h3>Siri, Shortcuts, and the Action button</h3>
+        <p>Peeky offers actions such as capturing a note or opening the payment radar. When you dictate to Siri, Apple processes your speech under Apple's terms and gives Peeky the resulting text. Peeky stores that text as a note on your device.</p>
+
+        <h3>Widgets, Lock Screen, and Dynamic Island</h3>
+        <p>To draw its widgets and Live Activities, Peeky writes a small summary — such as your next plan's title and time, the next payment's title and amount, and simple counts — into a shared storage area on your device that only Peeky and its own extensions can read. Buttons on those surfaces record your tap locally and apply it the next time you open the app.</p>
 
         <h3>Optional local analytics and diagnostics</h3>
         <p>If you opt in, Peeky can store basic feature events and technical crash information locally on your device. These records do not include note text, transcripts, payment details, or calendar content. They are not automatically sent to the developer. You can turn these options off and delete stored diagnostics in Settings.</p>
@@ -66,24 +91,27 @@
         <ul>
           <li><strong>Microphone:</strong> used only while you start and run a voice note.</li>
           <li><strong>Speech Recognition:</strong> used to turn a voice note into text through Apple's Speech framework.</li>
-          <li><strong>Calendar:</strong> used only when you ask Peeky to add a calendar event.</li>
-          <li><strong>Reminders:</strong> used only when you ask Peeky to add an Apple Reminder.</li>
-          <li><strong>Notifications:</strong> used for alerts you choose, such as reminders and upcoming payments.</li>
-          <li><strong>Live Activities:</strong> used to show the selected companion and status on supported Lock Screen and Dynamic Island surfaces.</li>
+          <li><strong>Calendar:</strong> used to show the day's events on your plan board and to add events you ask for.</li>
+          <li><strong>Reminders:</strong> used to show reminders due that day and to create the ones you ask for.</li>
+          <li><strong>Face ID:</strong> used only to unlock notes you chose to seal.</li>
+          <li><strong>Notifications:</strong> used for alerts you choose, such as plan times and upcoming payments.</li>
+          <li><strong>Live Activities:</strong> used to show the companion, a focus guard, or your day's progress on supported Lock Screen and Dynamic Island surfaces.</li>
         </ul>
         <p>You can change these permissions at any time in iOS Settings. Core manual note features remain available if you decline optional permissions.</p>
       </section>
 
       <section>
         <h2>Sharing and third parties</h2>
-        <p>Peeky does not sell personal information, serve ads, or share your content with data brokers. Apple may process information when you use Apple services such as Speech Recognition, Calendar, Reminders, notifications, Live Activities, and App Store purchases. Apple's handling of that information is governed by Apple's terms and privacy policies.</p>
-        <p>If you choose to share a beta feedback report, the iOS share sheet lets you select the destination. The report contains app and device diagnostics but excludes your notes, transcripts, payment details, and calendar content.</p>
+        <p>Peeky does not sell personal information, serve ads, or share your content with data brokers. Apple may process information when you use Apple services such as iCloud, Speech Recognition, Siri, Calendar, Reminders, notifications, Live Activities, and App Store purchases. Apple's handling of that information is governed by Apple's terms and privacy policies.</p>
+        <p>When you choose to share something from inside Peeky — a note card, a weekly receipt image, a data export, or a beta feedback report — the iOS share sheet lets you pick the destination, and the content goes only where you send it. Feedback reports contain app and device diagnostics but exclude your notes, transcripts, payment details, and calendar content.</p>
       </section>
 
       <section>
         <h2>Retention and deletion</h2>
-        <p>Local app content remains on your device until you delete the item or remove the app. Optional local diagnostics can be deleted from Peeky Settings at any time. Calendar events and Apple Reminders created at your request are managed in the corresponding Apple apps and remain there until you delete them.</p>
-        <p>Because Peeky does not require an account and does not keep your app content on a developer server, there is no server account or cloud content for the developer to delete.</p>
+        <p>Local app content remains on your device until you delete the item or remove the app. Deleted notes, plans, and payments first move to Peeky's paper basket, where they can be restored for 30 days before being removed for good; you can also empty the basket immediately.</p>
+        <p>If iCloud sync is on, deletions travel to your other devices in the same way. Removing the app from a device deletes its local copy; content that was synced remains in your iCloud account until it is deleted from a device that is still signed in, or through iCloud storage settings.</p>
+        <p>Optional local diagnostics can be deleted from Peeky Settings at any time. Calendar events and Apple Reminders created at your request are managed in the corresponding Apple apps and remain there until you delete them.</p>
+        <p>Because Peeky does not require an account and keeps no copy of your app content on a developer server, there is no server account for the developer to delete.</p>
       </section>
 
       <section>
