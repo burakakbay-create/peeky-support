@@ -28,7 +28,7 @@
         <p class="eyebrow">Peeky: Pocket Sidekick</p>
         <h1>Privacy Policy</h1>
         <p>Peeky keeps your notes, plans, and payment reminders on your device. If you turn on iCloud, they also sync privately through your own Apple Account. The developer never receives them.</p>
-        <p class="updated">Last updated: August 26, 2026</p>
+        <p class="updated">Last updated: October 23, 2026. The notebook audio features below apply to Peeky 1.2 and later.</p>
       </div>
     </section>
 
@@ -56,7 +56,9 @@
         <p>If your device is signed in to iCloud, Peeky mirrors your notes, attachments, drawings, plans, and payment reminders into the <em>private</em> database of your own iCloud account (container <code>iCloud.com.peeky.app</code>) so your devices stay in step. This storage belongs to you and is governed by Apple's iCloud terms and privacy policy. The developer has no access to it and receives no copy. If you are not signed in to iCloud, or you turn iCloud off for Peeky in iOS Settings, everything simply stays on the device.</p>
 
         <h3>Voice notes and transcription</h3>
-        <p>When you start a voice note, Peeky passes microphone audio to Apple's Speech framework for the transcription you request. Peeky asks for on-device recognition whenever your device and language support it; otherwise Apple may process it through Apple's services. Peeky does not create or retain a separate audio file, and the developer does not receive your audio or transcript.</p>
+        <p>Capture turns microphone audio into text for you to review and save. Capture does not retain a separate audio file. In Peeky 1.2 and later, transcription requires Apple's on-device Speech recognition; if a supported language model is unavailable, Peeky reports that transcription is unavailable rather than sending the recording to a remote transcription service.</p>
+        <p>Notebook recording is separate from Capture. When you record while writing or drawing, Peeky saves an audio file as an attachment to the note, together with timing information that links your ink strokes to the recording. The audio, timing information and any resulting transcript are stored in the app's private storage and can sync through your private iCloud account when iCloud sync is enabled. A pending recording may be kept locally for recovery until it is attached successfully. Transcription is attempted after recording stops; unavailable transcription does not remove the saved audio.</p>
+        <p>Handwriting recognition uses Apple's Vision framework on your device. Recognized text and its page locations can be saved with the note for editing, search and actions you confirm. The developer receives none of your recordings, drawings, transcripts or recognized text unless you explicitly share them.</p>
 
         <h3>Calendar and Reminders</h3>
         <p>With your permission, Peeky reads the events and incomplete reminders scheduled for the day you are viewing and shows them, read-only, alongside your own plans. Peeky also creates calendar events and Apple Reminders when you ask it to. This information is read on the device for display; Peeky does not copy it to the developer.</p>
@@ -89,8 +91,8 @@
       <section>
         <h2>Device permissions</h2>
         <ul>
-          <li><strong>Microphone:</strong> used only while you start and run a voice note.</li>
-          <li><strong>Speech Recognition:</strong> used to turn a voice note into text through Apple's Speech framework.</li>
+          <li><strong>Microphone:</strong> used when you start Capture or a notebook recording.</li>
+          <li><strong>Speech Recognition:</strong> used to turn speech into text through Apple's Speech framework. Peeky 1.2 requires a supported on-device model.</li>
           <li><strong>Calendar:</strong> used to show the day's events on your plan board and to add events you ask for.</li>
           <li><strong>Reminders:</strong> used to show reminders due that day and to create the ones you ask for.</li>
           <li><strong>Face ID:</strong> used only to unlock notes you chose to seal.</li>
